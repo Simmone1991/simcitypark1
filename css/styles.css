@@ -1,0 +1,378 @@
+/*Style for body specifies a bckgrnd color */
+body {
+background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+/*To use gradients use the body tag and insert background: linear-gradient or any type before the hyphen and the colors in parenthsis. Example: linear-gradient(white, blue); */
+
+nav {
+	font-family: 'Inconsolata', monospace;
+	font-size: 160%;
+	font-weight:bolder;
+	font-style:italic;
+	text-align:center;
+	color: purple;
+}
+
+h1 {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: bolder;
+	font-style: normal;
+	color: #B6018D;
+	font-size:400%;
+	float:center;
+	text-align: center;
+}
+
+main {
+	font-family: 'Itim', cursive;
+	font-size: 140%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/*Continue styling based on the power points. and what you do to the index must be done to template also change pricing in the nav to "Grab your tickets"*/
+
+footer {
+	font-size: .70em;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+/*Change "Ultimate Thrill Rides color*/
+h2 {
+	font-family:'Play', sans-serif;
+	font-weight: bolder;
+	font-style: normal;
+	text-align: large;
+	color: #00ff00;
+	font-size:230%;
+}
+
+ul {
+	font-size: 100%;
+	color: #00ff00;
+	margin-bottom: 50px;
+	list-style-position: inside;
+	font-style: italic;
+	font-family:'Play', sans-serif;
+	float: right;
+}
+
+li {
+	color: #B905CB;
+	list-style-position: inside;
+	font-style: normal;
+	font-size: 80%;
+	font-family: 'Itim', cursive;
+}
+
+dd {
+	padding-bottom: 20px;
+}
+
+/* refer to WA110 Day 4 v1.1 for next steps on how to proceed foward with Webpage*/
+
+/* For Fluid layouts */
+img { 
+	max-width:100%;
+}
+
+
+nav li {
+	background-color: #none;
+	border-radius: 2em;
+	list-style-type: none;
+	margin: 0.2em;
+	padding-left: 1.5em;
+	padding-right: 60%;
+	padding-bottom: 15%;
+	border: solid 5px #00ff00;
+	padding: 0.7em;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #00ff00;
+	font-family: 'Source Code Pro', monospace;
+	text-align: center;
+	font-size: 120%;
+}
+nav ul a {
+	font-size: 100%;
+}
+
+p {
+text-align: center;
+font-family: 'Michroma', sans-serif;
+color: #9B9B9B;
+font-size: 105%;
+font-weight:bolder;
+border: solid 4px #00ff00;
+width: 80%;
+height:200%;
+border-radius: 15px;
+}
+
+#ufo1 {
+	width:100%;
+	height:80%;
+}
+/* Refer to WA110 v1.1 Day4 slide#39 for continuation also continue filling in the Welcome page with pictures, and at least 2 paragraphs and or descriptions. Remember to also update each page to align with Index */
+
+/*In Css. Use a Mobile first strategy. Which means that mobile is your DEFAULT look and or strategy. You scale from smallest to largest using your media Query. For an example. you have MOBILE as your Default. After comes TABLET due to the tablet size being (roughly) 660px. And then Desktop. Because desktop is the largest at 980px (roughly). So you make adjustments based on MOBILE first, and so on. Also your MEDIA QUERIES must be in order as so. tablet to Desktop. Because thats the order in which it's scaled & Will display. */
+
+#cool1 {
+	height:80%;
+	width: 85%;
+}
+
+#cool2 {
+	height:80%;
+	width: 85%;
+}
+
+#cool3 {
+	height:80%;
+	width: 85%;
+}
+
+#guideline {
+	font-size: 25px;
+}
+
+#sim1 {
+	font-size:318%;
+	font-family: 'Bungee', cursive;
+	color: #0070F7;
+	font-weight: bolder;
+	text-align: center;
+}
+
+/*Style for PSUEDO-CLASSES*/
+nav li a:link {
+			color: #FFFFFF;
+		}
+		
+		nav li a:visited { 
+			color: #00ff00;
+		}
+
+		nav li a:hover {
+			color:  #0070F7;
+			font-style: italic;
+			cursor: crosshair;
+		}
+	
+
+/*Styling for Mobile class*/
+.mobile {
+	display:inline;
+}
+
+/*Styling that hides which ever you decide for desktop view.Create a class for it and manipulate what you want to be shown. using <div class="watever"> then use ".desktop" method to customize the class*/
+
+/*MOBILE Media Queries (or Rules) */
+
+/*Undo styles that were supposed to be tampered with for the TABLET view port*/
+
+/*TABLET VIEWPORTS ! Specific Display elements for TABLET view ports*/
+@media only screen and (min-width: 667px) {
+	main {
+		clear: left;
+		margin-top: 0.3em;
+		border-radius: 0;
+		overflow: auto;
+	}
+	
+	#cool1 {
+		height:160%;
+		width: 160%;
+	}
+	
+	#cool2 {
+		height:160%;
+		width: 160%;
+	}
+	
+	#cool3 {
+		height:160%;
+		width: 160%;
+	}
+
+	
+/* To display nav links horizontally refer to WA110 v1.1 Day 4 slide #71. Also watever you dont want displayed you can use the ".mobile" or the dot method and depending on which selector or id you do not want to be displayed acknowledge it and put the display to none*/
+
+}
+
+/*DESKTOP Media Queries (or Rules) An ideal media query for Desktop viewports are generally 940-980 */
+@media only screen and (min-width: 980px) {
+#cool1 {
+	height:45%;
+	width: 45%;
+}
+
+#cool2 {
+	height:45%;
+	width: 45%;
+}
+
+#cool3 {
+	height:45%;
+	width: 45%;
+}
+
+#ast1 {
+	height:40%;
+	width: 40%;
+	border: solid 4px #00ff00;
+	border-radius: 10px;
+}
+
+/* Only "id" selectors need the "#" */
+p {
+	height:50%;
+	width: 50%;
+}
+
+#ast2 {
+	text-align:Center;
+}
+
+#ast3 {
+	color: #0070F7;
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: bolder;
+	font-size: 480%;
+	height:65%;
+	width: 35%;
+}
+
+#contact {
+	font-size:600%;
+	font-family: 'Bungee', cursive;
+	color: #0070F7;
+	font-weight: bolder;
+	text-align: center;
+}
+
+#email {
+	height: 10%;
+	width: 10%;
+}
+
+#e2 {
+	font-size: 190%;
+}
+
+#b1 {
+	height: 25%;
+	width: 25%;
+	border:solid 4px #00ff00;
+	border-radius: 10px;
+}
+
+#b2 {
+	height: 23%;
+	width: 23%;
+	border:solid 4px #00ff00;
+	border-radius: 10px;
+}
+
+}
+
+/* Figured out Media Queries ( END OF MEDIA QUERIES) */
+/* Refer to WA110 Day 4 v1.1 for continuation. Slide #96 */
+
+#ult1 {
+	color: #0070F7;
+	font-weight: bolder;
+	font-size: 450%;
+}
+
+h3 {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: bolder;
+	font-style: normal;
+	color: #0070F7;
+	font-size:400%;
+	float:center;
+	text-align: center;
+}
+
+/* Refer to WA110 v1.1 Day4 Slide #104 on how to properly use gradients.*/
+
+#ast3 {
+	color: #0070F7;
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: bolder;
+	font-size: 170%;
+
+}
+
+#contact {
+	font-size:350%;
+	font-family: 'Bungee', cursive;
+	color: #0070F7;
+	font-weight: bolder;
+	text-align: center;
+}
+
+#r1 {
+	font-size:200%;
+	font-family: 'Bungee', cursive;
+	color: #0070F7;
+	font-weight: bolder;
+	text-align: left;
+}
+
+form {
+	color:#0070F7;
+}
+
+
+.chkbx {
+	display: inline-block;
+}
+
+#email {
+	height: 135%;
+	width: 135%;
+}
+
+#input1 {
+	color:#0070F7;
+}
+
+#e2 {
+	font-size: 60%;
+}	
+
+#b1 {
+	height: 65%;
+	width: 65%;
+	border:solid 4px #00ff00;
+	border-radius: 10px;
+}
+
+#b2 {
+	height: 65%;
+	width: 65%;
+	border:solid 4px #00ff00;
+	border-radius: 10px;
+}
+
+#b3 {
+	color: #0070F7;
+	font-size: 180%;
+	font-weight: bolder;
+}
